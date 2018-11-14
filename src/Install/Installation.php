@@ -151,11 +151,11 @@ class Installation
         });
 
         $pipeline->pipe(function () {
-            return new EnableBundledExtensions($this->tmp['db'], $this->basePath, $this->getAssetPath());
+            return new PublishAssets($this->basePath, $this->getAssetPath());
         });
 
         $pipeline->pipe(function () {
-            return new PublishAssets($this->basePath, $this->getAssetPath());
+            return new EnableBundledExtensions($this->tmp['db'], $this->basePath, $this->getAssetPath());
         });
 
         return $pipeline;
