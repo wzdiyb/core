@@ -16,7 +16,6 @@ use Flarum\Frontend\Compiler\Source\SourceCollector;
 use Flarum\Http\UrlGenerator;
 use Flarum\Settings\SettingsRepositoryInterface;
 use Illuminate\Contracts\View\Factory as ViewFactory;
-use Psr\Http\Message\ServerRequestInterface as Request;
 
 class FrontendServiceProvider extends AbstractServiceProvider
 {

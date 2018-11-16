@@ -40,9 +40,6 @@ class Index
         $this->view = $view;
     }
 
-    /**
-     * {@inheritdoc}
-     */
     public function __invoke(Document $document, Request $request)
     {
         $queryParams = $request->getQueryParams();
